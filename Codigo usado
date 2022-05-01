@@ -1,0 +1,70 @@
+PS C:\Users\carlo\OneDrive\CommitGithub> git init
+Reinitialized existing Git repository in C:/Users/carlo/OneDrive/CommitGithub/.git/
+PS C:\Users\carlo\OneDrive\CommitGithub> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        main.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\carlo\OneDrive\CommitGithub> git add .
+PS C:\Users\carlo\OneDrive\CommitGithub> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   main.css
+
+PS C:\Users\carlo\OneDrive\CommitGithub> git commit -m "Primeiro Commit"
+[master (root-commit) a7888aa] Primeiro Commit
+ 2 files changed, 18 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 main.css
+PS C:\Users\carlo\OneDrive\CommitGithub> git branch -M main
+PS C:\Users\carlo\OneDrive\CommitGithub> git remote add origin https://github.com/uchihaxcarlos/CommitGithub.git
+PS C:\Users\carlo\OneDrive\CommitGithub> git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 592 bytes | 592.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/uchihaxcarlos/CommitGithub.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+PS C:\Users\carlo\OneDrive\CommitGithub> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\carlo\OneDrive\CommitGithub> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\carlo\OneDrive\CommitGithub> git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+PS C:\Users\carlo\OneDrive\CommitGithub> git add .
+PS C:\Users\carlo\OneDrive\CommitGithub> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
